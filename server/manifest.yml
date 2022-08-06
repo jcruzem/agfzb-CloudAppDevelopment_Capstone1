@@ -1,0 +1,11 @@
+  applications:
+  - name: ARapp
+    routes:
+      - route: ARapp.eu-de.cf.appdomain.cloud
+    memory: 128M
+    buildpack: python_buildpack
+  - name: ARapp-nginx
+    routes:
+      - route: ARapp.eu-de.cf.appdomain.cloud/static
+    memory: 128M
+    buildpack: staticfile_buildpack
