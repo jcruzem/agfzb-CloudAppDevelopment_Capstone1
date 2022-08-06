@@ -1,11 +1,11 @@
   applications:
-  - name: ARapp
+  - name: djangoapp
     routes:
-      - route: ARapp.eu-de.cf.appdomain.cloud
+      - route: jfc.mybluemix.net
     memory: 128M
     buildpack: python_buildpack
-  - name: ARapp-nginx
+  - name: djangoapp-nginx
     routes:
-      - route: ARapp.eu-de.cf.appdomain.cloud/static
+      - route: jfc.mybluemix.net/static
     memory: 128M
     buildpack: staticfile_buildpack
